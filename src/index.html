@@ -1,0 +1,39 @@
+<main>
+  <nav class="navbar">
+    <a href="#">
+      <img class="brand-logo" src="https://i.ibb.co/kyhxmsg/Blanco.png" alt="logo"/>
+    </a>
+  </nav>
+  <section class="container">
+    <div class="form" id="form">
+      <h1 class="title">Challenge</h1>
+      <div class="divider"></div>
+      <label class="label" for="input-number">Número</label>
+      <input 
+        class="input"
+        id="number-input"
+        type="number"
+        placeholder="Ingresa un número y pulsa enter."
+        required
+      />
+      <label class="label" for="operation-selector">
+        ¿Qué deseas hacer con los números?
+      </label>
+      <select class="select" id="operation-selector">
+        <option value="sortDes">Ordenar de mayor a menor</option>
+        <option value="sortAsc">Ordenar de menor a mayor</option>
+        <option value="sumAll">Sumar todos</option>
+        <option value="multBySelf">Multiplicar cada número por sí mismo</option>
+      </select>
+      <div class="btn-group">
+        <button class="btn" id="add-btn">Agregar</button>
+        <button class="btn is-outline" id="remove-btn">Limpiar</button>
+      </div>
+      <p class="text" id="count-description">Números registrados</p>
+      <div class="subtitle" id="display-list"></div>
+      <hr/>
+      <p class="text" id="output-description"></p> 
+      <h3 class="subtitle" id="operation-output"></h3>
+    </div>
+  </section>
+</main>
